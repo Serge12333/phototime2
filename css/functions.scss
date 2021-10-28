@@ -1,0 +1,9 @@
+@function calculate($result) {
+  $size: $result * 100 * 1vw/1920;
+  @return $size;
+}
+
+@function calculate_h($result) {
+  $size: $result * 100 * 1vh/1920;
+  @return $size;
+}

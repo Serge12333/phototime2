@@ -1,0 +1,32 @@
+@mixin block-head {
+  font-family: $GhotemRounded;
+  font-size: calculate(18);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $btn-bg;
+}
+@mixin block-desc {
+  font-family: $GhotemRounded;
+  font-size: calculate(12);
+  line-height: calculate(24);
+  color: $text-color;
+}
+@mixin btn-text {
+  font-family: $GhotemRounded;
+  font-size: calculate(12);
+  text-transform: uppercase;
+  color: $white;
+}
+@mixin footer-text {
+  font-family: $GhotemRounded;
+  font-size: calculate(14);
+  font-weight: bold;
+  color: $text-color;
+}
+
+@mixin navigation {
+  font-family: $GhotemRounded;
+  font-size: calculate(16);
+  text-transform: uppercase;
+  color: $white;
+}

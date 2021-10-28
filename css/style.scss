@@ -1,0 +1,62 @@
+// importing all needed files
+@import "fonts.scss";
+@import "varibles.scss";
+@import "mixins.scss";
+@import "functions.scss";
+// common styles
+a {
+  // remove undrlining all links
+  text-decoration: none;
+}
+img {
+  //set image sizes
+  height: auto;
+  max-width: 100%;
+}
+*,
+::after,
+::before {
+  //change all ellements sizes
+  box-sizing: border-box;
+}
+
+.main_wrapper {
+  max-width: 1026px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url(../img/first_background.jpg);
+  background-size: 100% 100%;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: calculate(40);
+    padding-bottom: calculate(240);
+    text-decoration: none;
+
+    a {
+      @include navigation;
+      margin: 0 calculate(36);
+    }
+    img {
+      height: auto;
+      max-width: 100%;
+      margin: 0 calculate(64);
+    }
+  }
+
+  .your_life {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: calculate(222);
+
+    h1{
+      
+    }
+  }
+}
