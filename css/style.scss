@@ -38,6 +38,39 @@ img {
   @include footer-text;
 }
 //
+
+header {
+  background-image: url(../img/first_background.jpg);
+  background-size: 100% 100%;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: calculate(40);
+    padding-bottom: calculate(240);
+    text-decoration: none;
+
+    a {
+      @include navigation;
+      margin: 0 calculate(36);
+    }
+    img {
+      height: auto;
+      max-width: 100%;
+      margin: 0 calculate(64);
+    }
+  }
+
+  .your_life {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: calculate(222);
+  }
+}
+
 .comunity {
   background-color: $started-bg;
   .fx-container {
@@ -45,7 +78,7 @@ img {
     flex-wrap: wrap;
     justify-content: space-between;
     .comunity-text {
-      max-width: ;
+      max-width: 500px;
     }
     .slider-wraper {
       overflow: hidden;

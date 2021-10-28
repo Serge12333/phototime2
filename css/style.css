@@ -67,6 +67,57 @@ img {
   color: #373737;
 }
 
+header {
+  background-image: url(../img/first_background.jpg);
+  background-size: 100% 100%;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: calculate(40);
+  padding-bottom: calculate(240);
+  text-decoration: none;
+}
+
+header nav a {
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: calculate(16);
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 calculate(36);
+}
+
+header nav img {
+  height: auto;
+  max-width: 100%;
+  margin: 0 calculate(64);
+}
+
+header .your_life {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: calculate(222);
+}
+
 .comunity {
   background-color: #f5f6f7;
 }
@@ -80,6 +131,10 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.comunity .fx-container .comunity-text {
+  max-width: 500px;
 }
 
 .comunity .fx-container .slider-wraper {
@@ -104,7 +159,7 @@ img {
   position: absolute;
   content: "";
   height: 10px;
-  width: 3px;
+  width: 4px;
   background-color: #000;
 }
 

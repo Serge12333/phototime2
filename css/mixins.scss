@@ -25,3 +25,10 @@
   font-weight: bold;
   color: $text-color;
 }
+
+@mixin navigation {
+  font-family: $GhotemRounded;
+  font-size: calculate(16);
+  text-transform: uppercase;
+  color: $white;
+}
