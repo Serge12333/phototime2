@@ -1,0 +1,27 @@
+@import "varibles.scss";
+@import "functions.scss";
+@mixin block-head {
+  font-family: $GhotemRounded;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $btn-bg;
+}
+@mixin block-desc {
+  font-family: $GhotemRounded;
+  font-size: 12px;
+  line-height: 24px;
+  color: $text-color;
+}
+@mixin btn-text {
+  font-family: $GhotemRounded;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $white;
+}
+@mixin footer-text {
+  font-family: $GhotemRounded;
+  font-size: 14px;
+  font-weight: bold;
+  color: $text-color;
+}

@@ -1,0 +1,99 @@
+// importing all needed files
+@import "fonts.scss";
+@import "varibles.scss";
+@import "mixins.scss";
+@import "functions.scss";
+// common styles
+a {
+  // remove undrlining all links
+  text-decoration: none;
+}
+img {
+  //set image sizes
+  height: auto;
+  max-width: 100%;
+}
+*,
+::after,
+::before {
+  //change all ellements sizes
+  box-sizing: border-box;
+}
+// coomon text
+.main-wraper {
+  max-width: 1088px;
+  margin: 100px auto;
+}
+.block-head {
+  @include block-head;
+}
+.block-text {
+  @include block-desc;
+}
+.block-btn {
+  background-color: $btn-bg;
+  @include btn-text;
+}
+.footer-text {
+  @include footer-text;
+}
+//
+.comunity {
+  background-color: $started-bg;
+  .fx-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .comunity-text {
+      max-width: ;
+    }
+    .slider-wraper {
+      overflow: hidden;
+      .slider-controls {
+        .btn {
+          position: relative;
+          background: none;
+          border: none;
+          &:after {
+            position: absolute;
+            content: "";
+            height: 10px;
+            width: 3px;
+            background-color: $black;
+          }
+          &:before {
+            position: absolute;
+            content: "";
+            height: 10px;
+            width: 3px;
+            background-color: $black;
+          }
+        }
+      }
+    }
+  }
+}
+.subscribe {
+  background-image: url(../img/subscrib-img.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.download {
+  background-color: $started-bg;
+}
+footer {
+  background-color: $white;
+  .footer-list {
+    li {
+      display: inline-block;
+      &:nth-child(2) {
+        border-left: 2px solid $btn-bg;
+        border-right: 2px solid $btn-bg;
+      }
+      a {
+        @include footer-text;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
