@@ -42,7 +42,7 @@ img {
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #16a085;
+  color: #1abc9c;
 }
 
 .block-text {
@@ -53,7 +53,11 @@ img {
 }
 
 .block-btn {
-  background-color: #16a085;
+  padding: 0px;
+  border: none;
+  cursor: pointer;
+  background-color: #1abc9c;
+  text-align: center;
   font-family: "Gotham Rounded", sans-serif;
   font-size: 12px;
   text-transform: uppercase;
@@ -69,6 +73,7 @@ img {
 
 .comunity {
   background-color: #f5f6f7;
+  padding: 115px 5px;
 }
 
 .comunity .fx-container {
@@ -82,53 +87,254 @@ img {
           justify-content: space-between;
 }
 
+.comunity .fx-container .comunity-text {
+  max-width: 190px;
+  text-align: center;
+}
+
+.comunity .fx-container .comunity-text img {
+  margin-bottom: 30px;
+}
+
+.comunity .fx-container .comunity-text .block-head {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #373737;
+}
+
+.comunity .fx-container .comunity-text .block-text {
+  text-align: center;
+}
+
 .comunity .fx-container .slider-wraper {
   overflow: hidden;
 }
 
-.comunity .fx-container .slider-wraper .slider-controls .btn {
+.comunity .fx-container .slider-wraper .slider-controls {
   position: relative;
+}
+
+.comunity .fx-container .slider-wraper .slider-controls .btn {
+  position: absolute;
+  right: 0;
+  top: -10px;
   background: none;
   border: none;
 }
 
 .comunity .fx-container .slider-wraper .slider-controls .btn:after {
   position: absolute;
+  right: 0;
   content: "";
   height: 10px;
   width: 3px;
   background-color: #000;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .comunity .fx-container .slider-wraper .slider-controls .btn:before {
   position: absolute;
+  right: 0;
   content: "";
   height: 10px;
   width: 3px;
   background-color: #000;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .subscribe {
+  padding: 345px 0 327px;
   background-image: url(../img/subscrib-img.jpg);
   background-size: cover;
   background-position: center center;
 }
 
+.subscribe .main-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe .main-wraper .block-head {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 35px;
+}
+
+.subscribe .main-wraper .subscribe-form {
+  position: relative;
+  height: 65px;
+  width: 345px;
+}
+
+.subscribe .main-wraper .subscribe-input {
+  position: absolute;
+  left: 0px;
+  width: 90%;
+  height: 100%;
+  border: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color: #fff;
+  padding: 20px 20px;
+  outline: none;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 16px;
+  color: #373737;
+}
+
+.subscribe .main-wraper .subscribe-input::-webkit-input-placeholder {
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 16px;
+  color: #373737;
+}
+
+.subscribe .main-wraper .subscribe-input:-ms-input-placeholder {
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 16px;
+  color: #373737;
+}
+
+.subscribe .main-wraper .subscribe-input::-ms-input-placeholder {
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 16px;
+  color: #373737;
+}
+
+.subscribe .main-wraper .subscribe-input::placeholder {
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 16px;
+  color: #373737;
+}
+
+.subscribe .main-wraper .subscribe-btn {
+  position: absolute;
+  right: 0px;
+  width: 10%;
+  height: 100%;
+  padding: 22px 30px;
+  border: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #16a085;
+  background-image: url(../img/fa-check.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
 .download {
+  padding: 95px 0 115px;
   background-color: #f5f6f7;
+}
+
+.download .main-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.download .block-head {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 17px;
+}
+
+.download .block-text {
+  text-align: center;
+  max-width: 840px;
+  margin-bottom: 45px;
+}
+
+.download .btn-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 620px;
+}
+
+.download .btn-wraper .block-btn {
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 3px;
+  margin: 0 15px;
+  width: 298px;
+}
+
+.download .btn-wraper .block-btn span {
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-75%, -50%);
+          transform: translate(-75%, -50%);
+}
+
+.download .btn-wraper .block-btn .btn-icon {
+  float: right;
+  padding: 20px 5px;
+  margin-left: 80px;
+  width: 50px;
+  height: 100%;
+  background-color: #16a085;
 }
 
 footer {
   background-color: #fff;
 }
 
+footer .main-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-list {
+  margin-bottom: 27px;
+}
+
 footer .footer-list li {
   display: inline-block;
+  padding: 0 10px;
+}
+
+footer .footer-list li:first-child {
+  padding-left: 0;
 }
 
 footer .footer-list li:nth-child(2) {
-  border-left: 2px solid #16a085;
-  border-right: 2px solid #16a085;
+  border-left: 2px solid #1abc9c;
+  border-right: 2px solid #1abc9c;
 }
 
 footer .footer-list li a {

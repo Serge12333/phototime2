@@ -31,7 +31,11 @@ img {
   @include block-desc;
 }
 .block-btn {
+  padding: 0px;
+  border: none;
+  cursor: pointer;
   background-color: $btn-bg;
+  text-align: center;
   @include btn-text;
 }
 .footer-text {
@@ -40,33 +44,55 @@ img {
 //
 .comunity {
   background-color: $started-bg;
+  padding: 115px 5px;
   .fx-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     .comunity-text {
-      max-width: ;
+      max-width: 190px;
+      text-align: center;
+      img {
+        margin-bottom: 30px;
+      }
+      .block-head {
+        font-size: 16px;
+        margin-bottom: 30px;
+        color: $text-color;
+      }
+      .block-text {
+        text-align: center;
+      }
     }
     .slider-wraper {
       overflow: hidden;
       .slider-controls {
+        position: relative;
         .btn {
-          position: relative;
+          position: absolute;
+          right: 0;
+          top: -10px;
           background: none;
           border: none;
           &:after {
             position: absolute;
+            right: 0;
             content: "";
             height: 10px;
             width: 3px;
             background-color: $black;
+            transform-origin: left;
+            transform: rotate(-45deg);
           }
           &:before {
             position: absolute;
+            right: 0;
             content: "";
             height: 10px;
             width: 3px;
             background-color: $black;
+            transform-origin: left;
+            transform: rotate(45deg);
           }
         }
       }
@@ -74,18 +100,120 @@ img {
   }
 }
 .subscribe {
+  padding: 345px 0 327px;
   background-image: url(../img/subscrib-img.jpg);
   background-size: cover;
   background-position: center center;
+  .main-wraper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .block-head {
+      color: $white;
+      font-size: 24px;
+      margin-bottom: 35px;
+    }
+    .subscribe-form {
+      position: relative;
+      height: 65px;
+      width: 345px;
+    }
+    .subscribe-input {
+      position: absolute;
+      left: 0px;
+      width: 90%;
+      height: 100%;
+      border: none;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+      background-color: $white;
+      padding: 20px 20px;
+      outline: none;
+      @include placeholder-text;
+      &::placeholder {
+        @include placeholder-text;
+      }
+    }
+    .subscribe-btn {
+      position: absolute;
+      right: 0px;
+      width: 10%;
+      height: 100%;
+      padding: 22px 30px;
+      border: none;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      background-color: $btn-hover;
+      background-image: url(../img/fa-check.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+  }
 }
 .download {
+  padding: 95px 0 115px;
   background-color: $started-bg;
+  .main-wraper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .block-head {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 17px;
+  }
+  .block-text {
+    text-align: center;
+    max-width: 840px;
+    margin-bottom: 45px;
+  }
+  .btn-wraper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 620px;
+
+    .block-btn {
+      position: relative;
+      vertical-align: middle;
+      text-align: center;
+      border-radius: 3px;
+      margin: 0 15px;
+      width: 298px;
+      span {
+        font-size: 16px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-75%, -50%);
+      }
+      .btn-icon {
+        float: right;
+        padding: 20px 5px;
+        margin-left: 80px;
+        width: 50px;
+        height: 100%;
+        background-color: $btn-hover;
+      }
+    }
+  }
 }
 footer {
   background-color: $white;
+  .main-wraper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .footer-list {
+    margin-bottom: 27px;
     li {
       display: inline-block;
+      &:first-child {
+        padding-left: 0;
+      }
+      padding: 0 10px;
       &:nth-child(2) {
         border-left: 2px solid $btn-bg;
         border-right: 2px solid $btn-bg;
