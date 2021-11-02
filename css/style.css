@@ -34,7 +34,7 @@ img {
 
 .main-wraper {
   max-width: 56.66667vw;
-  margin: 0 auto;
+margin: 0 auto;
 }
 
 .block-head {
@@ -69,6 +69,197 @@ img {
   font-size: 0.72917vw;
   font-weight: bold;
   color: #373737;
+}
+
+header {
+  background-image: url(../img/first_background.jpg);
+  background-size: 100% 100%;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2.13542vw;
+  padding-bottom: 12.5vw;
+  text-decoration: none;
+}
+
+header nav a {
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 0.83333vw;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 1.875vw;
+}
+
+header nav img {
+  height: 2.76042vw;
+  width: 2.76042vw;
+  margin: 0 3.33333vw;
+}
+
+header .your_life {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 11.5625vw;
+}
+
+header .your_life h1 {
+  padding-bottom: 1.14583vw;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 1.875vw;
+  text-transform: uppercase;
+  letter-spacing: 0.46875vw;
+  color: #fff;
+}
+
+header .your_life p {
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 0.83333vw;
+  color: #fff;
+  font-weight: 500;
+  padding-bottom: 1.51042vw;
+}
+
+header .your_life .block-btn {
+  height: 2.55208vw;
+  width: 8.64583vw;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+header .icons {
+  padding-bottom: 1.35417vw;
+}
+
+header .icons .links {
+  padding-right: 0.9375vw;
+  height: 1.09375vw;
+  width: 2.13542vw;
+}
+
+.get_startred {
+  background-color: #f5f6f7;
+}
+
+.get_startred .align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 5.88542vw;
+}
+
+.get_startred .content {
+  text-align: left;
+}
+
+.get_startred .content h2 {
+  letter-spacing: 0.10417vw;
+  padding-bottom: 2.60417vw;
+}
+
+.get_startred .content p {
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 0.625vw;
+  line-height: 1.25vw;
+  color: #373737;
+  padding-bottom: 2.60417vw;
+}
+
+.get_startred .content .block-btn {
+  height: 2.55208vw;
+  width: 8.64583vw;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.get_startred img {
+  width: 32.65625vw;
+  height: 20.83333vw;
+}
+
+.design {
+  background-color: #ffffff;
+}
+
+.design .align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 7.8125vw;
+  gap: 100px;
+}
+
+.design .content {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.design .content h2 {
+  letter-spacing: 0.10417vw;
+  padding-bottom: 2.60417vw;
+}
+
+.design .content p {
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 0.625vw;
+  line-height: 1.25vw;
+  color: #373737;
+  padding-bottom: 2.60417vw;
+}
+
+.design .content .block-btn {
+  height: 2.55208vw;
+  width: 8.64583vw;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 2.44792vw;
+}
+
+.design .content .scroller {
+  width: 3.54167vw;
+  height: 2.8125vw;
+}
+
+.design img {
+  width: 16.66667vw;
 }
 
 .comunity {
@@ -110,6 +301,10 @@ img {
   text-align: center;
 }
 
+.comunity .fx-container .comunity-text {
+  max-width: 500px;
+}
+
 .comunity .fx-container .slider-wraper {
   overflow: hidden;
   width: 40vw;
@@ -138,9 +333,14 @@ img {
   display: flex;
 }
 
-.comunity .fx-container .slider-wraper .slider-window img {
-  width: 48%;
-  margin: 0 1%;
+
+.comunity .fx-container .slider-wraper .slider-controls .btn:before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 4px;
+  background-color: #000;
+
 }
 
 .subscribe {
