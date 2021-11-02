@@ -33,8 +33,9 @@ img {
 }
 
 .main-wraper {
-  max-width: 56.66667vw;
-margin: 0 auto;
+  max-width: 53.125vw;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
 .block-head {
@@ -76,6 +77,19 @@ header {
   background-size: 100% 100%;
 }
 
+header .main-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,8 +100,8 @@ header nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 2.13542vw;
-  padding-bottom: 12.5vw;
+  padding-top: 41px;
+  padding-bottom: 240px;
   text-decoration: none;
 }
 
@@ -119,11 +133,11 @@ header .your_life {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 11.5625vw;
+  padding-bottom: 222px;
 }
 
 header .your_life h1 {
-  padding-bottom: 1.14583vw;
+  padding-bottom: 22px;
   font-family: "Gotham Rounded", sans-serif;
   font-size: 1.875vw;
   text-transform: uppercase;
@@ -136,7 +150,7 @@ header .your_life p {
   font-size: 0.83333vw;
   color: #fff;
   font-weight: 500;
-  padding-bottom: 1.51042vw;
+  padding-bottom: 29px;
 }
 
 header .your_life .block-btn {
@@ -148,7 +162,7 @@ header .your_life .block-btn {
 }
 
 header .icons {
-  padding-bottom: 1.35417vw;
+  padding-bottom: 26px;
 }
 
 header .icons .links {
@@ -168,7 +182,7 @@ header .icons .links {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 5.88542vw;
+  padding-top: 113px;
 }
 
 .get_startred .content {
@@ -177,7 +191,7 @@ header .icons .links {
 
 .get_startred .content h2 {
   letter-spacing: 0.10417vw;
-  padding-bottom: 2.60417vw;
+  padding-bottom: 50px;
 }
 
 .get_startred .content p {
@@ -185,7 +199,7 @@ header .icons .links {
   font-size: 0.625vw;
   line-height: 1.25vw;
   color: #373737;
-  padding-bottom: 2.60417vw;
+  padding-bottom: 50px;
 }
 
 .get_startred .content .block-btn {
@@ -212,7 +226,7 @@ header .icons .links {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 7.8125vw;
+  padding-top: 150px;
   gap: 100px;
 }
 
@@ -232,7 +246,7 @@ header .icons .links {
 
 .design .content h2 {
   letter-spacing: 0.10417vw;
-  padding-bottom: 2.60417vw;
+  padding-bottom: 50px;
 }
 
 .design .content p {
@@ -240,7 +254,7 @@ header .icons .links {
   font-size: 0.625vw;
   line-height: 1.25vw;
   color: #373737;
-  padding-bottom: 2.60417vw;
+  padding-bottom: 50px;
 }
 
 .design .content .block-btn {
@@ -250,7 +264,7 @@ header .icons .links {
   border-radius: 3px;
   cursor: pointer;
   text-align: center;
-  margin-bottom: 2.44792vw;
+  margin-bottom: 50px;
 }
 
 .design .content .scroller {
@@ -264,7 +278,7 @@ header .icons .links {
 
 .comunity {
   background-color: #f5f6f7;
-  padding: 5.98958vw 0.26042vw;
+  padding: 115px 0.26042vw;
 }
 
 .comunity .fx-container {
@@ -285,24 +299,21 @@ header .icons .links {
   width: 9.89583vw;
   text-align: center;
   margin-right: 2.60417vw;
+  max-width: 500px;
 }
 
 .comunity .fx-container .comunity-text img {
-  margin-bottom: 1.5625vw;
+  margin-bottom: 30px;
 }
 
 .comunity .fx-container .comunity-text .block-head {
   font-size: 0.83333vw;
-  margin-bottom: 1.5625vw;
+  margin-bottom: 30px;
   color: #373737;
 }
 
 .comunity .fx-container .comunity-text .block-text {
   text-align: center;
-}
-
-.comunity .fx-container .comunity-text {
-  max-width: 500px;
 }
 
 .comunity .fx-container .slider-wraper {
@@ -317,7 +328,7 @@ header .icons .links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 0.52083vw 0.52083vw;
+  padding: 10px 0.52083vw;
   width: 100%;
 }
 
@@ -333,14 +344,25 @@ header .icons .links {
   display: flex;
 }
 
+.comunity .fx-container .slider-wraper .slider-window img {
+  width: 48%;
+  margin: 0 1%;
+}
 
-.comunity .fx-container .slider-wraper .slider-controls .btn:before {
+.comunity .fx-container .slider-wraper .slider-window img:after {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 3px;
+  background-color: #000;
+}
+
+.comunity .fx-container .slider-wraper .slider-window img:before {
   position: absolute;
   content: "";
   height: 10px;
   width: 4px;
   background-color: #000;
-
 }
 
 .subscribe {
@@ -366,7 +388,7 @@ header .icons .links {
 .subscribe .main-wraper .block-head {
   color: #fff;
   font-size: 1.25vw;
-  margin-bottom: 1.82292vw;
+  margin-bottom: 35px;
 }
 
 .subscribe .main-wraper .subscribe-form {
@@ -384,7 +406,7 @@ header .icons .links {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   background-color: #fff;
-  padding: 1.04167vw 1.04167vw;
+  padding: 2px 1.04167vw;
   outline: none;
   font-family: "Gotham Rounded", sans-serif;
   font-size: 0.83333vw;
@@ -420,7 +442,7 @@ header .icons .links {
   right: 0px;
   width: 10%;
   height: 100%;
-  padding: 1.14583vw 1.5625vw;
+  padding: 22px 1.5625vw;
   border: none;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -438,7 +460,7 @@ header .icons .links {
 }
 
 .download {
-  padding: 4.94792vw 0 5.98958vw;
+  padding: 95px 0 115px;
   background-color: #f5f6f7;
 }
 
@@ -458,13 +480,13 @@ header .icons .links {
 .download .block-head {
   font-size: 1.04167vw;
   text-align: center;
-  margin-bottom: 0.88542vw;
+  margin-bottom: 17px;
 }
 
 .download .block-text {
   text-align: center;
   width: 43.75vw;
-  margin-bottom: 2.34375vw;
+  margin-bottom: 45px;
 }
 
 .download .btn-wraper {
@@ -499,7 +521,7 @@ header .icons .links {
 
 .download .btn-wraper .block-btn .btn-icon {
   float: right;
-  padding: 1.04167vw 0.26042vw;
+  padding: 20px 0.26042vw;
   margin-left: 4.16667vw;
   width: 50px;
   height: 100%;
@@ -517,7 +539,7 @@ header .icons .links {
 }
 
 footer {
-  padding: 2.34375vw 0 2.08333vw;
+  padding: 45px 040px;
   background-color: #fff;
 }
 
@@ -534,7 +556,7 @@ footer .main-wraper {
 }
 
 footer .footer-list {
-  margin-bottom: 1.40625vw;
+  margin-bottom: 27px;
 }
 
 footer .footer-list li {

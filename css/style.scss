@@ -21,9 +21,11 @@ img {
 }
 // coomon text
 .main-wraper {
-  max-width: calculate(1088);
-margin: 0 auto;
+  max-width: calculate(1020);
+  padding: 0 10px;
+  margin: 0 auto;
 }
+
 .block-head {
   @include block-head;
 }
@@ -46,13 +48,17 @@ margin: 0 auto;
 header {
   background-image: url(../img/first_background.jpg);
   background-size: 100% 100%;
-
+  .main-wraper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: calculate(41);
-    padding-bottom: calculate(240);
+    padding-top: 41px;
+    padding-bottom: 240px;
     text-decoration: none;
 
     a {
@@ -71,10 +77,10 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: calculate(222);
+    padding-bottom: 222px;
 
     h1 {
-      padding-bottom: calculate(22);
+      padding-bottom: 22px;
       @include h1;
     }
 
@@ -83,7 +89,7 @@ header {
       font-size: calculate(16);
       color: $white;
       font-weight: 500;
-      padding-bottom: calculate(29);
+      padding-bottom: 29px;
     }
 
     .block-btn {
@@ -95,7 +101,7 @@ header {
     }
   }
   .icons {
-    padding-bottom: calculate(26);
+    padding-bottom: 26px;
     .links {
       padding-right: calculate(18);
       height: calculate(21);
@@ -110,18 +116,18 @@ header {
   .align {
     display: flex;
     justify-content: space-between;
-    padding-top: calculate(113);
+    padding-top: 113px;
   }
 
   .content {
     text-align: left;
     h2 {
       letter-spacing: calculate(2);
-      padding-bottom: calculate(50);
+      padding-bottom: 50px;
     }
     p {
       @include block-desc;
-      padding-bottom: calculate(50);
+      padding-bottom: 50px;
     }
 
     .block-btn {
@@ -145,7 +151,7 @@ header {
   .align {
     display: flex;
     justify-content: space-between;
-    padding-top: calculate(150);
+    padding-top: 150px;
     gap: 100px;
   }
 
@@ -156,11 +162,11 @@ header {
     align-items: flex-start;
     h2 {
       letter-spacing: calculate(2);
-      padding-bottom: calculate(50);
+      padding-bottom: 50px;
     }
     p {
       @include block-desc;
-      padding-bottom: calculate(50);
+      padding-bottom: 50px;
     }
 
     .block-btn {
@@ -170,10 +176,10 @@ header {
       border-radius: 3px;
       cursor: pointer;
       text-align: center;
-      margin-bottom: calculate(47);
+      margin-bottom: 50px;
     }
 
-    .scroller{
+    .scroller {
       width: calculate(68);
       height: calculate(54);
     }
@@ -186,23 +192,22 @@ header {
 
 .comunity {
   background-color: $started-bg;
-  padding: calculate(115) calculate(5);
+  padding: 115px calculate(5);
   .fx-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     .comunity-text {
-
       width: calculate(190);
       text-align: center;
       margin-right: calculate(50);
       img {
-        margin-bottom: calculate(30);
+        margin-bottom: 30px;
       }
       .block-head {
         font-size: calculate(16);
-        margin-bottom: calculate(30);
+        margin-bottom: 30px;
         color: $text-color;
       }
       .block-text {
@@ -210,7 +215,6 @@ header {
       }
 
       max-width: 500px;
-
     }
     .slider-wraper {
       overflow: hidden;
@@ -218,7 +222,7 @@ header {
       .slider-controls {
         display: flex;
         justify-content: flex-end;
-        padding: calculate(10) calculate(10);
+        padding: 10px calculate(10);
         width: 100%;
         .btn {
           border: none;
@@ -247,7 +251,6 @@ header {
             width: 4px;
             background-color: $black;
           }
-
         }
       }
     }
@@ -265,7 +268,7 @@ header {
     .block-head {
       color: $white;
       font-size: calculate(24);
-      margin-bottom: calculate(35);
+      margin-bottom: 35px;
     }
     .subscribe-form {
       position: relative;
@@ -281,7 +284,7 @@ header {
       border-top-left-radius: 3px;
       border-bottom-left-radius: 3px;
       background-color: $white;
-      padding: calculate(20) calculate(20);
+      padding: 2px calculate(20);
       outline: none;
       @include placeholder-text;
       &::placeholder {
@@ -293,7 +296,7 @@ header {
       right: 0px;
       width: 10%;
       height: 100%;
-      padding: calculate(22) calculate(30);
+      padding: 22px calculate(30);
       border: none;
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
@@ -310,7 +313,7 @@ header {
   }
 }
 .download {
-  padding: calculate(95) 0 calculate(115);
+  padding: 95px 0 115px;
   background-color: $started-bg;
   .main-wraper {
     display: flex;
@@ -320,12 +323,12 @@ header {
   .block-head {
     font-size: calculate(20);
     text-align: center;
-    margin-bottom: calculate(17);
+    margin-bottom: 17px;
   }
   .block-text {
     text-align: center;
     width: calculate(840);
-    margin-bottom: calculate(45);
+    margin-bottom: 45px;
   }
   .btn-wraper {
     display: flex;
@@ -349,7 +352,7 @@ header {
       }
       .btn-icon {
         float: right;
-        padding: calculate(20) calculate(5);
+        padding: 20px calculate(5);
         margin-left: calculate(80);
         width: 50px;
         height: 100%;
@@ -366,7 +369,7 @@ header {
   }
 }
 footer {
-  padding: calculate(45) 0 calculate(40);
+  padding: 45px 040px;
   background-color: $white;
   .main-wraper {
     display: flex;
@@ -374,7 +377,7 @@ footer {
     justify-content: space-between;
   }
   .footer-list {
-    margin-bottom: calculate(27);
+    margin-bottom: 27px;
     li {
       display: inline-block;
       &:first-child {
