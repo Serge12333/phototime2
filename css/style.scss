@@ -22,8 +22,7 @@ img {
 // coomon text
 .main-wraper {
   max-width: calculate(1088);
-  margin: 0px auto;
-  text-align: center;
+margin: 0 auto;
 }
 .block-head {
   @include block-head;
@@ -32,7 +31,11 @@ img {
   @include block-desc;
 }
 .block-btn {
+  padding: 0;
+  border: none;
+  cursor: pointer;
   background-color: $btn-bg;
+  text-align: center;
   @include btn-text;
 }
 .footer-text {
@@ -183,20 +186,53 @@ header {
 
 .comunity {
   background-color: $started-bg;
+  padding: calculate(115) calculate(5);
   .fx-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     .comunity-text {
+
+      width: calculate(190);
+      text-align: center;
+      margin-right: calculate(50);
+      img {
+        margin-bottom: calculate(30);
+      }
+      .block-head {
+        font-size: calculate(16);
+        margin-bottom: calculate(30);
+        color: $text-color;
+      }
+      .block-text {
+        text-align: center;
+      }
+
       max-width: 500px;
+
     }
     .slider-wraper {
       overflow: hidden;
+      width: calculate(768);
       .slider-controls {
+        display: flex;
+        justify-content: flex-end;
+        padding: calculate(10) calculate(10);
+        width: 100%;
         .btn {
-          position: relative;
-          background: none;
           border: none;
+
+          background-color: transparent;
+          cursor: pointer;
+        }
+      }
+      .slider-window {
+        display: flex;
+        img {
+          width: 48%;
+          margin: 0 1%;
+
           &:after {
             position: absolute;
             content: "";
@@ -211,24 +247,140 @@ header {
             width: 4px;
             background-color: $black;
           }
+
         }
       }
     }
   }
 }
 .subscribe {
+  padding: calculate(345) 0 calculate(327);
   background-image: url(../img/subscrib-img.jpg);
   background-size: cover;
   background-position: center center;
+  .main-wraper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .block-head {
+      color: $white;
+      font-size: calculate(24);
+      margin-bottom: calculate(35);
+    }
+    .subscribe-form {
+      position: relative;
+      height: calculate(65);
+      width: calculate(345);
+    }
+    .subscribe-input {
+      position: absolute;
+      left: 0px;
+      width: 90%;
+      height: 100%;
+      border: none;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+      background-color: $white;
+      padding: calculate(20) calculate(20);
+      outline: none;
+      @include placeholder-text;
+      &::placeholder {
+        @include placeholder-text;
+      }
+    }
+    .subscribe-btn {
+      position: absolute;
+      right: 0px;
+      width: 10%;
+      height: 100%;
+      padding: calculate(22) calculate(30);
+      border: none;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      background-color: $btn-hover;
+      background-image: url(../img/fa-check.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      transition: 0.4s;
+      &:hover {
+        background-color: $btn-bg;
+      }
+    }
+  }
 }
 .download {
+  padding: calculate(95) 0 calculate(115);
   background-color: $started-bg;
+  .main-wraper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .block-head {
+    font-size: calculate(20);
+    text-align: center;
+    margin-bottom: calculate(17);
+  }
+  .block-text {
+    text-align: center;
+    width: calculate(840);
+    margin-bottom: calculate(45);
+  }
+  .btn-wraper {
+    display: flex;
+    justify-content: space-between;
+    width: calculate(620);
+
+    .block-btn {
+      position: relative;
+      vertical-align: middle;
+      text-align: center;
+      border-radius: 3px;
+      margin: 0 calculate(15);
+      width: calculate(298);
+      transition: 0.4s;
+      span {
+        font-size: calculate(16);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-75%, -50%);
+      }
+      .btn-icon {
+        float: right;
+        padding: calculate(20) calculate(5);
+        margin-left: calculate(80);
+        width: 50px;
+        height: 100%;
+        background-color: $btn-hover;
+        transition: 0.4s;
+      }
+      &:hover {
+        background-color: $btn-hover;
+        .btn-icon {
+          background-color: $btn-bg;
+        }
+      }
+    }
+  }
 }
 footer {
+  padding: calculate(45) 0 calculate(40);
   background-color: $white;
+  .main-wraper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .footer-list {
+    margin-bottom: calculate(27);
     li {
       display: inline-block;
+      &:first-child {
+        padding-left: 0;
+      }
+      padding: 0 calculate(10);
       &:nth-child(2) {
         border-left: 2px solid $btn-bg;
         border-right: 2px solid $btn-bg;
