@@ -33,13 +33,13 @@ img {
 }
 
 .main-wraper {
-  max-width: 1088px;
-  margin: 100px auto;
+  max-width: 56.66667vw;
+  margin: 0 auto;
 }
 
 .block-head {
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 18px;
+  font-size: 0.9375vw;
   font-weight: bold;
   text-transform: uppercase;
   color: #1abc9c;
@@ -47,33 +47,33 @@ img {
 
 .block-text {
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 12px;
-  line-height: 24px;
+  font-size: 0.625vw;
+  line-height: 1.25vw;
   color: #373737;
 }
 
 .block-btn {
-  padding: 0px;
+  padding: 0;
   border: none;
   cursor: pointer;
   background-color: #1abc9c;
   text-align: center;
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 12px;
+  font-size: 0.625vw;
   text-transform: uppercase;
   color: #fff;
 }
 
 .footer-text {
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 14px;
+  font-size: 0.72917vw;
   font-weight: bold;
   color: #373737;
 }
 
 .comunity {
   background-color: #f5f6f7;
-  padding: 115px 5px;
+  padding: 5.98958vw 0.26042vw;
 }
 
 .comunity .fx-container {
@@ -85,20 +85,24 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .comunity .fx-container .comunity-text {
-  max-width: 190px;
+  width: 9.89583vw;
   text-align: center;
+  margin-right: 2.60417vw;
 }
 
 .comunity .fx-container .comunity-text img {
-  margin-bottom: 30px;
+  margin-bottom: 1.5625vw;
 }
 
 .comunity .fx-container .comunity-text .block-head {
-  font-size: 16px;
-  margin-bottom: 30px;
+  font-size: 0.83333vw;
+  margin-bottom: 1.5625vw;
   color: #373737;
 }
 
@@ -108,48 +112,39 @@ img {
 
 .comunity .fx-container .slider-wraper {
   overflow: hidden;
+  width: 40vw;
 }
 
 .comunity .fx-container .slider-wraper .slider-controls {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0.52083vw 0.52083vw;
+  width: 100%;
 }
 
 .comunity .fx-container .slider-wraper .slider-controls .btn {
-  position: absolute;
-  right: 0;
-  top: -10px;
-  background: none;
   border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
-.comunity .fx-container .slider-wraper .slider-controls .btn:after {
-  position: absolute;
-  right: 0;
-  content: "";
-  height: 10px;
-  width: 3px;
-  background-color: #000;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+.comunity .fx-container .slider-wraper .slider-window {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.comunity .fx-container .slider-wraper .slider-controls .btn:before {
-  position: absolute;
-  right: 0;
-  content: "";
-  height: 10px;
-  width: 3px;
-  background-color: #000;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+.comunity .fx-container .slider-wraper .slider-window img {
+  width: 48%;
+  margin: 0 1%;
 }
 
 .subscribe {
-  padding: 345px 0 327px;
+  padding: 17.96875vw 0 17.03125vw;
   background-image: url(../img/subscrib-img.jpg);
   background-size: cover;
   background-position: center center;
@@ -170,14 +165,14 @@ img {
 
 .subscribe .main-wraper .block-head {
   color: #fff;
-  font-size: 24px;
-  margin-bottom: 35px;
+  font-size: 1.25vw;
+  margin-bottom: 1.82292vw;
 }
 
 .subscribe .main-wraper .subscribe-form {
   position: relative;
-  height: 65px;
-  width: 345px;
+  height: 3.38542vw;
+  width: 17.96875vw;
 }
 
 .subscribe .main-wraper .subscribe-input {
@@ -189,34 +184,34 @@ img {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   background-color: #fff;
-  padding: 20px 20px;
+  padding: 1.04167vw 1.04167vw;
   outline: none;
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 16px;
+  font-size: 0.83333vw;
   color: #373737;
 }
 
 .subscribe .main-wraper .subscribe-input::-webkit-input-placeholder {
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 16px;
+  font-size: 0.83333vw;
   color: #373737;
 }
 
 .subscribe .main-wraper .subscribe-input:-ms-input-placeholder {
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 16px;
+  font-size: 0.83333vw;
   color: #373737;
 }
 
 .subscribe .main-wraper .subscribe-input::-ms-input-placeholder {
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 16px;
+  font-size: 0.83333vw;
   color: #373737;
 }
 
 .subscribe .main-wraper .subscribe-input::placeholder {
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 16px;
+  font-size: 0.83333vw;
   color: #373737;
 }
 
@@ -225,7 +220,7 @@ img {
   right: 0px;
   width: 10%;
   height: 100%;
-  padding: 22px 30px;
+  padding: 1.14583vw 1.5625vw;
   border: none;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -234,10 +229,16 @@ img {
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.subscribe .main-wraper .subscribe-btn:hover {
+  background-color: #1abc9c;
 }
 
 .download {
-  padding: 95px 0 115px;
+  padding: 4.94792vw 0 5.98958vw;
   background-color: #f5f6f7;
 }
 
@@ -255,15 +256,15 @@ img {
 }
 
 .download .block-head {
-  font-size: 20px;
+  font-size: 1.04167vw;
   text-align: center;
-  margin-bottom: 17px;
+  margin-bottom: 0.88542vw;
 }
 
 .download .block-text {
   text-align: center;
-  max-width: 840px;
-  margin-bottom: 45px;
+  width: 43.75vw;
+  margin-bottom: 2.34375vw;
 }
 
 .download .btn-wraper {
@@ -273,7 +274,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 620px;
+  width: 32.29167vw;
 }
 
 .download .btn-wraper .block-btn {
@@ -281,12 +282,14 @@ img {
   vertical-align: middle;
   text-align: center;
   border-radius: 3px;
-  margin: 0 15px;
-  width: 298px;
+  margin: 0 0.78125vw;
+  width: 15.52083vw;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .download .btn-wraper .block-btn span {
-  font-size: 16px;
+  font-size: 0.83333vw;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -296,14 +299,25 @@ img {
 
 .download .btn-wraper .block-btn .btn-icon {
   float: right;
-  padding: 20px 5px;
-  margin-left: 80px;
+  padding: 1.04167vw 0.26042vw;
+  margin-left: 4.16667vw;
   width: 50px;
   height: 100%;
   background-color: #16a085;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.download .btn-wraper .block-btn:hover {
+  background-color: #16a085;
+}
+
+.download .btn-wraper .block-btn:hover .btn-icon {
+  background-color: #1abc9c;
 }
 
 footer {
+  padding: 2.34375vw 0 2.08333vw;
   background-color: #fff;
 }
 
@@ -320,12 +334,12 @@ footer .main-wraper {
 }
 
 footer .footer-list {
-  margin-bottom: 27px;
+  margin-bottom: 1.40625vw;
 }
 
 footer .footer-list li {
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 0.52083vw;
 }
 
 footer .footer-list li:first-child {
@@ -339,7 +353,7 @@ footer .footer-list li:nth-child(2) {
 
 footer .footer-list li a {
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 14px;
+  font-size: 0.72917vw;
   font-weight: bold;
   color: #373737;
   text-transform: uppercase;

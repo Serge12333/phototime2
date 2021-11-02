@@ -21,8 +21,8 @@ img {
 }
 // coomon text
 .main-wraper {
-  max-width: 1088px;
-  margin: 100px auto;
+  max-width: calculate(1088);
+  margin: 0 auto;
 }
 .block-head {
   @include block-head;
@@ -31,7 +31,7 @@ img {
   @include block-desc;
 }
 .block-btn {
-  padding: 0px;
+  padding: 0;
   border: none;
   cursor: pointer;
   background-color: $btn-bg;
@@ -44,20 +44,22 @@ img {
 //
 .comunity {
   background-color: $started-bg;
-  padding: 115px 5px;
+  padding: calculate(115) calculate(5);
   .fx-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     .comunity-text {
-      max-width: 190px;
+      width: calculate(190);
       text-align: center;
+      margin-right: calculate(50);
       img {
-        margin-bottom: 30px;
+        margin-bottom: calculate(30);
       }
       .block-head {
-        font-size: 16px;
-        margin-bottom: 30px;
+        font-size: calculate(16);
+        margin-bottom: calculate(30);
         color: $text-color;
       }
       .block-text {
@@ -66,41 +68,30 @@ img {
     }
     .slider-wraper {
       overflow: hidden;
+      width: calculate(768);
       .slider-controls {
-        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        padding: calculate(10) calculate(10);
+        width: 100%;
         .btn {
-          position: absolute;
-          right: 0;
-          top: -10px;
-          background: none;
           border: none;
-          &:after {
-            position: absolute;
-            right: 0;
-            content: "";
-            height: 10px;
-            width: 3px;
-            background-color: $black;
-            transform-origin: left;
-            transform: rotate(-45deg);
-          }
-          &:before {
-            position: absolute;
-            right: 0;
-            content: "";
-            height: 10px;
-            width: 3px;
-            background-color: $black;
-            transform-origin: left;
-            transform: rotate(45deg);
-          }
+          background-color: transparent;
+          cursor: pointer;
+        }
+      }
+      .slider-window {
+        display: flex;
+        img {
+          width: 48%;
+          margin: 0 1%;
         }
       }
     }
   }
 }
 .subscribe {
-  padding: 345px 0 327px;
+  padding: calculate(345) 0 calculate(327);
   background-image: url(../img/subscrib-img.jpg);
   background-size: cover;
   background-position: center center;
@@ -110,13 +101,13 @@ img {
     align-items: center;
     .block-head {
       color: $white;
-      font-size: 24px;
-      margin-bottom: 35px;
+      font-size: calculate(24);
+      margin-bottom: calculate(35);
     }
     .subscribe-form {
       position: relative;
-      height: 65px;
-      width: 345px;
+      height: calculate(65);
+      width: calculate(345);
     }
     .subscribe-input {
       position: absolute;
@@ -127,7 +118,7 @@ img {
       border-top-left-radius: 3px;
       border-bottom-left-radius: 3px;
       background-color: $white;
-      padding: 20px 20px;
+      padding: calculate(20) calculate(20);
       outline: none;
       @include placeholder-text;
       &::placeholder {
@@ -139,7 +130,7 @@ img {
       right: 0px;
       width: 10%;
       height: 100%;
-      padding: 22px 30px;
+      padding: calculate(22) calculate(30);
       border: none;
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
@@ -148,11 +139,15 @@ img {
       background-position: center center;
       background-repeat: no-repeat;
       cursor: pointer;
+      transition: 0.4s;
+      &:hover {
+        background-color: $btn-bg;
+      }
     }
   }
 }
 .download {
-  padding: 95px 0 115px;
+  padding: calculate(95) 0 calculate(115);
   background-color: $started-bg;
   .main-wraper {
     display: flex;
@@ -160,29 +155,30 @@ img {
     align-items: center;
   }
   .block-head {
-    font-size: 20px;
+    font-size: calculate(20);
     text-align: center;
-    margin-bottom: 17px;
+    margin-bottom: calculate(17);
   }
   .block-text {
     text-align: center;
-    max-width: 840px;
-    margin-bottom: 45px;
+    width: calculate(840);
+    margin-bottom: calculate(45);
   }
   .btn-wraper {
     display: flex;
     justify-content: space-between;
-    max-width: 620px;
+    width: calculate(620);
 
     .block-btn {
       position: relative;
       vertical-align: middle;
       text-align: center;
       border-radius: 3px;
-      margin: 0 15px;
-      width: 298px;
+      margin: 0 calculate(15);
+      width: calculate(298);
+      transition: 0.4s;
       span {
-        font-size: 16px;
+        font-size: calculate(16);
         position: absolute;
         top: 50%;
         left: 50%;
@@ -190,16 +186,24 @@ img {
       }
       .btn-icon {
         float: right;
-        padding: 20px 5px;
-        margin-left: 80px;
+        padding: calculate(20) calculate(5);
+        margin-left: calculate(80);
         width: 50px;
         height: 100%;
         background-color: $btn-hover;
+        transition: 0.4s;
+      }
+      &:hover {
+        background-color: $btn-hover;
+        .btn-icon {
+          background-color: $btn-bg;
+        }
       }
     }
   }
 }
 footer {
+  padding: calculate(45) 0 calculate(40);
   background-color: $white;
   .main-wraper {
     display: flex;
@@ -207,13 +211,13 @@ footer {
     justify-content: space-between;
   }
   .footer-list {
-    margin-bottom: 27px;
+    margin-bottom: calculate(27);
     li {
       display: inline-block;
       &:first-child {
         padding-left: 0;
       }
-      padding: 0 10px;
+      padding: 0 calculate(10);
       &:nth-child(2) {
         border-left: 2px solid $btn-bg;
         border-right: 2px solid $btn-bg;
