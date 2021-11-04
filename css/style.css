@@ -16,6 +16,10 @@
   font-display: swap;
 }
 
+html {
+  font-size: 16px;
+}
+
 a {
   text-decoration: none;
 }
@@ -33,14 +37,14 @@ img {
 }
 
 .main-wraper {
-  max-width: 53.125vw;
+  max-width: 63.75rem;
   padding: 0 10px;
   margin: 0 auto;
 }
 
 .block-head {
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 0.9375vw;
+  font-size: 1.125rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #1abc9c;
@@ -48,8 +52,8 @@ img {
 
 .block-text {
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 0.625vw;
-  line-height: 1.25vw;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
   color: #373737;
 }
 
@@ -60,14 +64,14 @@ img {
   background-color: #1abc9c;
   text-align: center;
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 0.625vw;
+  font-size: 0.75rem;
   text-transform: uppercase;
   color: #fff;
 }
 
 .footer-text {
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 0.72917vw;
+  font-size: 0.875rem;
   font-weight: bold;
   color: #373737;
 }
@@ -107,16 +111,16 @@ header nav {
 
 header nav a {
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 0.83333vw;
+  font-size: 1rem;
   text-transform: uppercase;
   color: #fff;
-  margin: 0 1.875vw;
+  margin: 0 2.25rem;
 }
 
 header nav img {
-  height: 2.76042vw;
-  width: 2.76042vw;
-  margin: 0 3.33333vw;
+  height: 3.3125rem;
+  width: 3.3125rem;
+  margin: 0 4rem;
 }
 
 header .your_life {
@@ -139,23 +143,23 @@ header .your_life {
 header .your_life h1 {
   padding-bottom: 22px;
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 1.875vw;
+  font-size: 2.25rem;
   text-transform: uppercase;
-  letter-spacing: 0.46875vw;
+  letter-spacing: 0.5625rem;
   color: #fff;
 }
 
 header .your_life p {
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 0.83333vw;
+  font-size: 1rem;
   color: #fff;
   font-weight: 500;
   padding-bottom: 29px;
 }
 
 header .your_life .block-btn {
-  height: 2.55208vw;
-  width: 8.64583vw;
+  height: 3.0625rem;
+  width: 10.375rem;
   border: none;
   border-radius: 3px;
   cursor: pointer;
@@ -166,9 +170,9 @@ header .icons {
 }
 
 header .icons .links {
-  padding-right: 0.9375vw;
-  height: 1.09375vw;
-  width: 2.13542vw;
+  padding-right: 1.125rem;
+  height: 1.3125rem;
+  width: 2.5625rem;
 }
 
 .get_startred {
@@ -190,29 +194,29 @@ header .icons .links {
 }
 
 .get_startred .content h2 {
-  letter-spacing: 0.10417vw;
+  letter-spacing: 0.125rem;
   padding-bottom: 50px;
 }
 
 .get_startred .content p {
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 0.625vw;
-  line-height: 1.25vw;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
   color: #373737;
   padding-bottom: 50px;
 }
 
 .get_startred .content .block-btn {
-  height: 2.55208vw;
-  width: 8.64583vw;
+  height: 3.0625rem;
+  width: 10.375rem;
   border: none;
   border-radius: 3px;
   cursor: pointer;
 }
 
 .get_startred img {
-  width: 32.65625vw;
-  height: 20.83333vw;
+  width: 39.1875rem;
+  height: 25rem;
 }
 
 .design {
@@ -245,21 +249,21 @@ header .icons .links {
 }
 
 .design .content h2 {
-  letter-spacing: 0.10417vw;
+  letter-spacing: 0.125rem;
   padding-bottom: 50px;
 }
 
 .design .content p {
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 0.625vw;
-  line-height: 1.25vw;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
   color: #373737;
   padding-bottom: 50px;
 }
 
 .design .content .block-btn {
-  height: 2.55208vw;
-  width: 8.64583vw;
+  height: 3.0625rem;
+  width: 10.375rem;
   border: none;
   border-radius: 3px;
   cursor: pointer;
@@ -268,17 +272,17 @@ header .icons .links {
 }
 
 .design .content .scroller {
-  width: 3.54167vw;
-  height: 2.8125vw;
+  width: 4.25rem;
+  height: 3.375rem;
 }
 
 .design img {
-  width: 16.66667vw;
+  width: 20rem;
 }
 
 .comunity {
   background-color: #f5f6f7;
-  padding: 115px 0.26042vw;
+  padding: 115px 0.3125rem;
 }
 
 .comunity .fx-container {
@@ -294,9 +298,9 @@ header .icons .links {
 }
 
 .comunity .fx-container .comunity-text {
-  width: 9.89583vw;
+  max-width: 11.875rem;
   text-align: center;
-  margin-right: 2.60417vw;
+  margin-right: 3.125rem;
   max-width: 500px;
 }
 
@@ -305,7 +309,7 @@ header .icons .links {
 }
 
 .comunity .fx-container .comunity-text .block-head {
-  font-size: 0.83333vw;
+  font-size: 1rem;
   margin-bottom: 30px;
   color: #373737;
 }
@@ -316,7 +320,7 @@ header .icons .links {
 
 .comunity .fx-container .slider-wraper {
   overflow: hidden;
-  width: 40vw;
+  width: 48rem;
 }
 
 .comunity .fx-container .slider-wraper .slider-controls {
@@ -326,7 +330,7 @@ header .icons .links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 10px 0.52083vw;
+  padding: 10px 0.625rem;
   width: 100%;
 }
 
@@ -364,7 +368,7 @@ header .icons .links {
 }
 
 .subscribe {
-  padding: 17.96875vw 0 17.03125vw;
+  padding: 21.5625rem 0 20.4375rem;
   background-image: url(../img/subscrib-img.jpg);
   background-size: cover;
   background-position: center center;
@@ -385,14 +389,14 @@ header .icons .links {
 
 .subscribe .main-wraper .block-head {
   color: #fff;
-  font-size: 1.25vw;
+  font-size: 1.5rem;
   margin-bottom: 35px;
 }
 
 .subscribe .main-wraper .subscribe-form {
   position: relative;
-  height: 3.38542vw;
-  width: 17.96875vw;
+  height: 4.0625rem;
+  width: 21.5625rem;
 }
 
 .subscribe .main-wraper .subscribe-input {
@@ -404,34 +408,34 @@ header .icons .links {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   background-color: #fff;
-  padding: 2px 1.04167vw;
+  padding: 2px 1.25rem;
   outline: none;
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 0.83333vw;
+  font-size: 1rem;
   color: #373737;
 }
 
 .subscribe .main-wraper .subscribe-input::-webkit-input-placeholder {
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 0.83333vw;
+  font-size: 1rem;
   color: #373737;
 }
 
 .subscribe .main-wraper .subscribe-input:-ms-input-placeholder {
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 0.83333vw;
+  font-size: 1rem;
   color: #373737;
 }
 
 .subscribe .main-wraper .subscribe-input::-ms-input-placeholder {
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 0.83333vw;
+  font-size: 1rem;
   color: #373737;
 }
 
 .subscribe .main-wraper .subscribe-input::placeholder {
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 0.83333vw;
+  font-size: 1rem;
   color: #373737;
 }
 
@@ -440,7 +444,7 @@ header .icons .links {
   right: 0px;
   width: 10%;
   height: 100%;
-  padding: 22px 1.5625vw;
+  padding: 1.5rem 1.875rem;
   border: none;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -476,14 +480,14 @@ header .icons .links {
 }
 
 .download .block-head {
-  font-size: 1.04167vw;
+  font-size: 1.25rem;
   text-align: center;
   margin-bottom: 17px;
 }
 
 .download .block-text {
   text-align: center;
-  width: 43.75vw;
+  max-width: 52.5rem;
   margin-bottom: 45px;
 }
 
@@ -494,22 +498,21 @@ header .icons .links {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 32.29167vw;
+  max-width: 38.75rem;
 }
 
 .download .btn-wraper .block-btn {
   position: relative;
-  vertical-align: middle;
   text-align: center;
   border-radius: 3px;
-  margin: 0 0.78125vw;
-  width: 15.52083vw;
+  margin: 0 0.9375rem;
+  width: 18.625rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 .download .btn-wraper .block-btn span {
-  font-size: 0.83333vw;
+  font-size: 1rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -519,10 +522,12 @@ header .icons .links {
 
 .download .btn-wraper .block-btn .btn-icon {
   float: right;
-  padding: 20px 0.26042vw;
-  margin-left: 4.16667vw;
+  padding: 1.25rem 0.3125rem;
+  margin-left: 5rem;
   width: 50px;
   height: 100%;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
   background-color: #16a085;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -537,7 +542,7 @@ header .icons .links {
 }
 
 footer {
-  padding: 45px 040px;
+  padding: 45px 40px;
   background-color: #fff;
 }
 
@@ -559,7 +564,7 @@ footer .footer-list {
 
 footer .footer-list li {
   display: inline-block;
-  padding: 0 0.52083vw;
+  padding: 0 0.625rem;
 }
 
 footer .footer-list li:first-child {
@@ -573,10 +578,25 @@ footer .footer-list li:nth-child(2) {
 
 footer .footer-list li a {
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 0.72917vw;
+  font-size: 0.875rem;
   font-weight: bold;
   color: #373737;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 775px) {
+  .comunity .fx-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .comunity .fx-container .slider-wraper {
+    max-width: 90%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -668,17 +688,17 @@ footer .footer-list li a {
     text-align: center;
   }
   .get_startred .align .content .block-head {
-    font-size: 30px;
+    font-size: 20px;
     padding-bottom: 20px;
   }
   .get_startred .align .content .block-head br {
     display: none;
   }
   .get_startred .align .content p {
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 20px;
     padding-bottom: 20px;
-    text-align: justify;
+    text-align: center;
     letter-spacing: normal;
   }
   .get_startred .align .content p br {
@@ -726,7 +746,7 @@ footer .footer-list li a {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     padding-bottom: 20px;
   }
@@ -734,10 +754,10 @@ footer .footer-list li a {
     display: none;
   }
   .design .align .content p {
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 20px;
     padding-bottom: 20px;
-    text-align: justify;
+    text-align: center;
     letter-spacing: normal;
   }
   .design .align .content p br {
@@ -747,12 +767,56 @@ footer .footer-list li a {
     height: 40px;
     width: 320px;
     border-radius: 20px;
-    font-size: 25px;
+    font-size: 14px;
     margin-bottom: 50px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
   }
+  .comunity .fx-container .comunity-text .block-head {
+    font-size: 20px;
+  }
+  .comunity .block-head {
+    font-size: 20px;
+  }
+  .comunity .block-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .subscribe {
+    background-image: url(../img/subscrib-im-md.jpg);
+  }
+  .subscribe .main-wraper .block-head {
+    font-size: 20px;
+    text-align: center;
+  }
+  .download .block-head {
+    font-size: 20px;
+  }
+  .download .block-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 655px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  html {
+    font-size: 8px;
+  }
+  footer {
+    padding: 45px 10px;
+  }
+}
+
+footer .footer-list li a {
+  font-size: 12px;
+  line-height: 20px;
 }
 
 @media screen and (max-width: 390px) {
@@ -761,11 +825,11 @@ footer .footer-list li a {
     background-size: 100% 100%;
   }
   header .main-wraper nav a {
-    font-size: 40px;
+    font-size: 14px;
   }
   header .main-wraper .your_life .block-btn {
     width: 260px;
-    font-size: 30px;
+    font-size: 14px;
   }
   .get_startred .align img {
     width: 300px;
@@ -775,7 +839,7 @@ footer .footer-list li a {
     line-height: 25px;
   }
   .get_startred .align .content p {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 30px;
   }
   .get_startred .align .content .block-btn {
@@ -789,11 +853,14 @@ footer .footer-list li a {
     line-height: 25px;
   }
   .design .align .content p {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 30px;
   }
   .design .align .content .block-btn {
     width: 300px;
+  }
+  .subscribe {
+    background-image: url(../img/subscrib-img-sm.jpg);
   }
 }
 /*# sourceMappingURL=style.css.map */

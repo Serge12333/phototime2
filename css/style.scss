@@ -4,6 +4,9 @@
 @import "mixins.scss";
 @import "functions.scss";
 // common styles
+html {
+  font-size: 16px;
+}
 a {
   // remove undrlining all links
   text-decoration: none;
@@ -199,7 +202,7 @@ header {
     justify-content: space-between;
     align-items: center;
     .comunity-text {
-      width: calculate(190);
+      max-width: calculate(190);
       text-align: center;
       margin-right: calculate(50);
       img {
@@ -296,7 +299,7 @@ header {
       right: 0px;
       width: 10%;
       height: 100%;
-      padding: 22px calculate(30);
+      padding: calculate(24) calculate(30);
       border: none;
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
@@ -327,17 +330,17 @@ header {
   }
   .block-text {
     text-align: center;
-    width: calculate(840);
+    max-width: calculate(840);
     margin-bottom: 45px;
   }
   .btn-wraper {
     display: flex;
     justify-content: space-between;
-    width: calculate(620);
+    max-width: calculate(620);
 
     .block-btn {
       position: relative;
-      vertical-align: middle;
+
       text-align: center;
       border-radius: 3px;
       margin: 0 calculate(15);
@@ -352,10 +355,12 @@ header {
       }
       .btn-icon {
         float: right;
-        padding: 20px calculate(5);
+        padding: calculate(20) calculate(5);
         margin-left: calculate(80);
         width: 50px;
         height: 100%;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
         background-color: $btn-hover;
         transition: 0.4s;
       }
@@ -369,7 +374,7 @@ header {
   }
 }
 footer {
-  padding: 45px 040px;
+  padding: 45px 40px;
   background-color: $white;
   .main-wraper {
     display: flex;
@@ -395,7 +400,17 @@ footer {
     }
   }
 }
-
+@media screen and (max-width: 775px) {
+  .comunity {
+    .fx-container {
+      flex-direction: column;
+      align-items: center;
+      .slider-wraper {
+        max-width: 90%;
+      }
+    }
+  }
+}
 @media screen and (max-width: 768px) {
   header {
     background-image: url(../img/first_background.jpg);
@@ -469,7 +484,7 @@ footer {
         text-align: center;
 
         .block-head {
-          font-size: 30px;
+          font-size: 20px;
           padding-bottom: 20px;
           br {
             display: none;
@@ -477,10 +492,10 @@ footer {
         }
 
         p {
-          font-size: 25px;
-          line-height: 30px;
+          font-size: 14px;
+          line-height: 20px;
           padding-bottom: 20px;
-          text-align: justify;
+          text-align: center; //remove justify
           letter-spacing: normal;
           br {
             display: none;
@@ -522,7 +537,7 @@ footer {
 
         .block-head {
           align-self: center;
-          font-size: 30px;
+          font-size: 20px;
           text-align: center;
           padding-bottom: 20px;
           br {
@@ -531,10 +546,10 @@ footer {
         }
 
         p {
-          font-size: 25px;
-          line-height: 30px;
+          font-size: 14px;
+          line-height: 20px;
           padding-bottom: 20px;
-          text-align: justify;
+          text-align: center; //remove center
           letter-spacing: normal;
           br {
             display: none;
@@ -544,10 +559,67 @@ footer {
           height: 40px;
           width: 320px;
           border-radius: 20px;
-          font-size: 25px;
+          font-size: 14px;
           margin-bottom: 50px;
           align-self: center;
         }
+      }
+    }
+  }
+  //andrey
+  .comunity {
+    .fx-container {
+      .comunity-text {
+        .block-head {
+          font-size: 20px;
+        }
+      }
+    }
+    .block-head {
+      font-size: 20px;
+    }
+    .block-text {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  .subscribe {
+    background-image: url(../img/subscrib-im-md.jpg);
+    .main-wraper .block-head {
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  .download {
+    .block-head {
+      font-size: 20px;
+    }
+    .block-text {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+@media screen and (max-width: 655px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 490px) {
+  html {
+    font-size: 8px;
+  }
+  footer {
+    padding: 45px 10px;
+  }
+}
+
+footer {
+  .footer-list {
+    li {
+      a {
+        font-size: 12px;
+        line-height: 20px;
       }
     }
   }
@@ -560,13 +632,13 @@ footer {
     .main-wraper {
       nav {
         a {
-          font-size: 40px;
+          font-size: 14px;
         }
       }
       .your_life {
         .block-btn {
           width: 260px;
-          font-size: 30px;
+          font-size: 14px;
         }
       }
     }
@@ -585,7 +657,7 @@ footer {
         }
 
         p {
-          font-size: 15px;
+          font-size: 14px;
           line-height: 30px;
         }
         .block-btn {
@@ -608,7 +680,7 @@ footer {
         }
 
         p {
-          font-size: 15px;
+          font-size: 14px;
           line-height: 30px;
         }
         .block-btn {
@@ -616,5 +688,8 @@ footer {
         }
       }
     }
+  }
+  .subscribe {
+    background-image: url(../img/subscrib-img-sm.jpg);
   }
 }
