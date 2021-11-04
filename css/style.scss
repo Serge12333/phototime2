@@ -395,3 +395,226 @@ footer {
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  header {
+    background-image: url(../img/first_background.jpg);
+    background-size: 100% 100%;
+    .main-wraper {
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 80px;
+        padding-bottom: 40px;
+        text-decoration: none;
+        gap: 20px;
+
+        a {
+          font-size: 50px;
+        }
+
+        img {
+          display: none;
+        }
+      }
+      .your_life {
+        padding-bottom: 50px;
+        h1 {
+          display: none;
+        }
+        p {
+          display: none;
+        }
+
+        .block-btn {
+          height: 60px;
+          width: 320px;
+          border-radius: 20px;
+          font-size: 30px;
+        }
+      }
+
+      .icons {
+        padding-bottom: 26px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .links {
+          height: 16px;
+          width: 30px;
+        }
+      }
+    }
+  }
+
+  .get_startred {
+    .align {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 30px;
+      max-width: 90%;
+
+      img {
+        width: 400px;
+        height: 350px;
+        order: -1;
+        padding-bottom: 50px;
+      }
+
+      .content {
+        text-align: center;
+
+        .block-head {
+          font-size: 30px;
+          padding-bottom: 20px;
+          br {
+            display: none;
+          }
+        }
+
+        p {
+          font-size: 25px;
+          line-height: 30px;
+          padding-bottom: 20px;
+          text-align: justify;
+          letter-spacing: normal;
+          br {
+            display: none;
+          }
+        }
+        .block-btn {
+          height: 40px;
+          width: 320px;
+          border-radius: 20px;
+          font-size: 25px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+
+  .design {
+    .align {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 30px;
+      max-width: 90%;
+
+      img {
+        width: 300px;
+        height: 350px;
+        order: -1;
+        margin-bottom: -70px;
+      }
+
+      .content {
+        text-align: center;
+
+        img {
+          display: none;
+        }
+
+        .block-head {
+          align-self: center;
+          font-size: 30px;
+          text-align: center;
+          padding-bottom: 20px;
+          br {
+            display: none;
+          }
+        }
+
+        p {
+          font-size: 25px;
+          line-height: 30px;
+          padding-bottom: 20px;
+          text-align: justify;
+          letter-spacing: normal;
+          br {
+            display: none;
+          }
+        }
+        .block-btn {
+          height: 40px;
+          width: 320px;
+          border-radius: 20px;
+          font-size: 25px;
+          margin-bottom: 50px;
+          align-self: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  header {
+    background-image: url(../img/first_background.jpg);
+    background-size: 100% 100%;
+    .main-wraper {
+      nav {
+        a {
+          font-size: 40px;
+        }
+      }
+      .your_life {
+        .block-btn {
+          width: 260px;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  .get_startred {
+    .align {
+      img {
+        width: 300px;
+      }
+
+      .content {
+        .block-head {
+          font-size: 20px;
+          line-height: 25px;
+        }
+
+        p {
+          font-size: 15px;
+          line-height: 30px;
+        }
+        .block-btn {
+          width: 300px;
+        }
+      }
+    }
+  }
+
+  .design {
+    .align {
+      img {
+        width: 300px;
+      }
+
+      .content {
+        .block-head {
+          font-size: 20px;
+          line-height: 25px;
+        }
+
+        p {
+          font-size: 15px;
+          line-height: 30px;
+        }
+        .block-btn {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
