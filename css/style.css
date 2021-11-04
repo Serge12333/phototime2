@@ -597,6 +597,9 @@ footer .footer-list li a {
   .comunity .fx-container .slider-wraper {
     max-width: 90%;
   }
+  .subscribe .main-wraper .subscribe-form {
+    max-width: 43.75rem;
+  }
 }
 
 @media screen and (max-width: 768px) {

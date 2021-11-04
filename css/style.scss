@@ -410,6 +410,10 @@ footer {
       }
     }
   }
+
+  .subscribe .main-wraper .subscribe-form {
+    max-width: calculate(700);
+  }
 }
 @media screen and (max-width: 768px) {
   header {
