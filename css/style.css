@@ -598,7 +598,10 @@ footer .footer-list li a {
     max-width: 90%;
   }
   .subscribe .main-wraper .subscribe-form {
-    max-width: 43.75rem;
+    width: 90%;
+  }
+  .subscribe .main-wraper .subscribe-form .subscribe-input {
+    width: 90%;
   }
 }
 
@@ -645,7 +648,7 @@ footer .footer-list li a {
     height: 60px;
     width: 320px;
     border-radius: 20px;
-    font-size: 30px;
+    font-size: 1.5rem;
   }
   header .main-wraper .icons {
     padding-bottom: 26px;
@@ -711,7 +714,7 @@ footer .footer-list li a {
     height: 40px;
     width: 320px;
     border-radius: 20px;
-    font-size: 25px;
+    font-size: 1.5rem;
     margin-bottom: 50px;
   }
   .design .align {
@@ -770,7 +773,7 @@ footer .footer-list li a {
     height: 40px;
     width: 320px;
     border-radius: 20px;
-    font-size: 14px;
+    font-size: 1.5rem;
     margin-bottom: 50px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -832,7 +835,7 @@ footer .footer-list li a {
   }
   header .main-wraper .your_life .block-btn {
     width: 260px;
-    font-size: 14px;
+    font-size: 1.5rem;
   }
   .get_startred .align img {
     width: 300px;
