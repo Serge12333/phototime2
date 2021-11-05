@@ -275,19 +275,19 @@ header {
     }
     .subscribe-form {
       position: relative;
-      height: calculate(65);
       width: calculate(345);
     }
     .subscribe-input {
       position: absolute;
       left: 0px;
+      height: 100%;
       width: 90%;
       height: 100%;
       border: none;
       border-top-left-radius: 3px;
       border-bottom-left-radius: 3px;
       background-color: $white;
-      padding: 2px calculate(20);
+      padding: 20px calculate(20);
       outline: none;
       @include placeholder-text;
       &::placeholder {
@@ -296,10 +296,11 @@ header {
     }
     .subscribe-btn {
       position: absolute;
+      top: 0;
       right: 0px;
       width: 10%;
-      height: 100%;
-      padding: calculate(24) calculate(30);
+
+      padding: 13px calculate(30);
       border: none;
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;

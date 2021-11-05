@@ -395,20 +395,20 @@ header .icons .links {
 
 .subscribe .main-wraper .subscribe-form {
   position: relative;
-  height: 4.0625rem;
   width: 21.5625rem;
 }
 
 .subscribe .main-wraper .subscribe-input {
   position: absolute;
   left: 0px;
+  height: 100%;
   width: 90%;
   height: 100%;
   border: none;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   background-color: #fff;
-  padding: 2px 1.25rem;
+  padding: 20px 1.25rem;
   outline: none;
   font-family: "Gotham Rounded", sans-serif;
   font-size: 1rem;
@@ -441,10 +441,10 @@ header .icons .links {
 
 .subscribe .main-wraper .subscribe-btn {
   position: absolute;
+  top: 0;
   right: 0px;
   width: 10%;
-  height: 100%;
-  padding: 1.5rem 1.875rem;
+  padding: 13px 1.875rem;
   border: none;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
