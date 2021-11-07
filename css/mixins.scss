@@ -25,20 +25,17 @@
   font-weight: bold;
   color: $text-color;
 }
-
 @mixin placeholder-text {
   font-family: $GhotemRounded;
   font-size: calculate(16);
   color: $text-color;
 }
-
 @mixin navigation {
   font-family: $GhotemRounded;
   font-size: calculate(16);
   text-transform: uppercase;
   color: $white;
 }
-
 @mixin h1 {
   font-family: $GhotemRounded;
   font-size: calculate(36);

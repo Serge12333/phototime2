@@ -419,35 +419,63 @@ footer {
 }
 @media screen and (max-width: 768px) {
   header {
+    position: relative;
     background-image: url(../img/first_background.jpg);
-    background-size: 100% 100%;
+    .nav-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      height: 30px;
+      width: 30px;
+      border: 2px solid $white;
+      border-radius: 3px;
+      padding: 5px 5px;
+      .row {
+        margin-bottom: 5px;
+        background-color: $white;
+        height: 2px;
+        width: 90%;
+      }
+    }
+
     .main-wraper {
       nav {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 80px;
+        padding-top: 75px;
         padding-bottom: 40px;
         text-decoration: none;
-        gap: 20px;
+        width: 100%;
+        transform: translate(0);
+        transition: 0.4s;
 
         a {
-          font-size: 50px;
+          font-size: 16px;
+          width: 100%;
+          text-align: center;
+          color: $btn-bg;
+          padding: 10px 20px;
+          border-bottom: 2px solid $btn-hover;
+          background-color: $white;
+          transition: 0.4s;
+          &:hover {
+            color: $white;
+            background-color: $btn-bg;
+          }
         }
-
-        img {
-          display: none;
+        .logo {
+          position: absolute;
+          top: 20px;
+          left: 20px;
         }
+      }
+      .hide {
+        transform: translateY(-200%);
       }
       .your_life {
         padding-bottom: 50px;
-        h1 {
-          display: none;
-        }
-        p {
-          display: none;
-        }
 
         .block-btn {
           height: 60px;
@@ -459,9 +487,7 @@ footer {
 
       .icons {
         padding-bottom: 26px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+
         .links {
           height: 16px;
           width: 30px;
